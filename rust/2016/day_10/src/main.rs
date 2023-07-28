@@ -9,7 +9,7 @@ use lazy_static::lazy_static;
 use regex::Regex;
 
 fn main() {
-    println!("Advent of Code 2016 - day 09");
+    println!("Advent of Code 2016 - day 10");
 }
 
 lazy_static! {
