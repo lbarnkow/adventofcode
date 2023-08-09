@@ -1,6 +1,6 @@
 # --- Day 5: A Maze of Twisty Trampolines, All Alike ---
 
-## _(copied from [Advent of Code - 2016 - Day 05](https://adventofcode.com/2016/day/5))_
+## _(copied from [Advent of Code - 2017 - Day 05](https://adventofcode.com/2017/day/5))_
 
 An urgent interrupt arrives from the CPU: it's trapped in a maze of jump instructions, and it would like assistance from any programs with spare cycles to help find the exit.
 

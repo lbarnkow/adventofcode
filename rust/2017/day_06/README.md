@@ -1,6 +1,6 @@
 # --- Day 6: Memory Reallocation ---
 
-## _(copied from [Advent of Code - 2016 - Day 06](https://adventofcode.com/2016/day/6))_
+## _(copied from [Advent of Code - 2017 - Day 06](https://adventofcode.com/2017/day/6))_
 
 A debugger program here is having an issue: it is trying to repair a memory reallocation routine, but it keeps getting stuck in an infinite loop.
 

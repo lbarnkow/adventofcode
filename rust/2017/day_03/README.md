@@ -1,6 +1,6 @@
 # --- Day 3: Spiral Memory ---
 
-## _(copied from [Advent of Code - 2016 - Day 03](https://adventofcode.com/2016/day/3))_
+## _(copied from [Advent of Code - 2017 - Day 03](https://adventofcode.com/2017/day/3))_
 
 You come across an experimental new kind of memory stored on an infinite two-dimensional grid.
 
