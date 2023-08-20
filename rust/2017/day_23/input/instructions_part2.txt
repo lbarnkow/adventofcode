@@ -1,0 +1,70 @@
+set b 79
+set c b
+jnz a 2
+jnz 1 5
+mul b 100
+sub b -100000
+set c b
+sub c -17000
+set f 1
+set d 2
+set e 2
+
+####################
+# inner-most loop increments e to test if there exists an 'e' so
+# that 'd * e == b' holds. In that case 'f' is set to '0'.
+#
+# With an additional modulo-operator one could immediately check
+# if a suitable 'e' exists and set 'f' accordingly.
+# pseudo-code:
+####################
+# if b % d == 0 {
+#     f = 0
+# }
+####################
+# original code:
+# set g d
+# mul g e
+# sub g b
+# jnz g 2
+# set f 0
+# sub e -1
+# set g e
+# sub g b
+# jnz g -8
+####################
+# "optimized" code uses additional mod(ulo) operation
+set g b
+mod g d
+jnz g 2
+set f 0
+####################
+
+# couple no-ops to keep jnz addresses intact
+set g 0
+set g 0
+set g 0
+
+####################
+# middle-loop increments d until 'd == b'.
+# However, this can be cut short, if 'f = 0'
+####################
+# "optimized" short-cut
+jnz f 2
+jnz 1 5
+####################
+# original middle-loop kept intact otherwise
+sub d -1
+set g d
+sub g b
+jnz g -13
+####################
+
+jnz f 2
+sub h -1
+set g b
+sub g c
+jnz g 2
+jnz 1 3
+sub b -17
+jnz 1 -23
